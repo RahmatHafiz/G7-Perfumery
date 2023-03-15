@@ -1,87 +1,189 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /*.clear {
-    clear: left;
-  }*/
-  
-  .container {
-    max-width: 1170px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-    position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #023047;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 50px;
+  margin-top: 7px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: #1e6091;
+}
+
+.team {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.member {
+  margin: 20px;
+  text-align: center;
+  flex: 1;
+  max-width: 200px;
+}
+
+.member-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.member-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .team {
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .btn {
-    padding: 12px 24px;
-    color: white;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 4px;
-    text-align: center;
+  .member {
+    margin: 20px 0;
+    max-width: none;
   }
-  
-  .btn:hover {
-    opacity: 1;
-  }
-  
-  .fa {
-    margin-right: 5px;
-  }
-  
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: #023047;
-    position :fixed;
-    top: 0;
-    z-index: 10;
-  }
-  
-  /*.logo {
-    width: 50px;
-    margin-top: 7px;
-  }*/
 
-  .logo {
-    font-size: 30px;
-    font-weight: normal;
-    float: left;
-    font-family: fantasy;
-    color:aliceblue;
-    margin-top: 7px;
+  .member-image {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 10px;
   }
-  
-  .header-left {
-    float: left;
+
+  .member h3,
+  .member p {
+    margin: 0;
   }
-  
+}
+
+@media screen and (min-width: 769px) {
+  .member {
+    margin: 0 20px;
+    max-width: none;
+  }
+
+  .member-image {
+    width: 200px;
+    max-width: none;
+    margin: 0 auto 20px;
+  }
+}
+
+
+.contact-form {
+  padding-top: 100%;
+}
+
+.contact-form input,
+textarea {
+  width: 350px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid #3c7da0;
+
+}
+
+.contact-submit {
+  padding: 15px 40px;
+  background-color: #3c7da0;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 7px #0b4564;
+}
+
+.contact-submit:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
   .header-right {
-    float: right;
-    margin-right: -25px;
+    display: none;
   }
-  
-  .header-right a {
-    font-size: garamond;
-    color: white;
-    line-height: 65px;
-    padding: 0 25px;
+
+  .menu-icon {
     display: block;
-    float: left;
-    transition: all 0.5s;
   }
-  
-  .header-right a:hover {
-    background-color: #1e6091;
-  }
-  
+}
