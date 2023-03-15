@@ -10,7 +10,10 @@
     text-decoration: none;
   }
   
-  /*.clear {
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond:ital@1&family=Joan&display=swap');
+
+  /* .clear {
     clear: left;
   }*/
   
@@ -83,5 +86,83 @@
   
   .header-right a:hover {
     background-color: #1e6091;
-  }
+  } */
   
+/* main */
+.about {
+  margin-bottom: 20px;
+  padding-left: 90px;
+  height: 800px;
+  background-color: #95d5b2;
+  float: left;
+}
+.text_about {
+  border-bottom: 2px solid black;
+  font-size: 40px;
+  float: left;
+}
+.text {
+  color: #686666;
+  font-size: 20pt;
+  float: left;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+}
+h1{
+  margin-bottom: -10px;
+}
+.text_about span {
+  color: blueviolet
+}
+.read_more {
+  width: 20%;
+	float: left;
+	background-color: #fa3e19;
+	height: 50px;
+	font-size: 16pt;
+	border: 0px;
+  color: #fff;
+}
+.read_more:hover {
+  color: black
+}
+.content {
+  align-items: center;
+  margin: 40px 90px;
+  padding-left: 20px;
+  height: 800px;
+  background-color: white;
+}
+.content h2 {
+  font-size: 40pt;
+  border-bottom: 3px solid black;
+  font-family: 'Dancing Script';
+}
+span {
+  color:red;
+}
+.container {
+  margin-top: 40px;
+}
+.contents {
+  float: left;
+  margin-right: 40px;
+  margin: 10px;
+}
+.contents img {
+  border: 2px solid orange;
+}
+.con_text a {
+color: rgba(235,161,88,255);
+margin-top: 20px;
+}
+.con_text h3 {
+  text-align: center;
+  font-size: 24px;
+  color: black;
+}
+.con_text h3:hover{
+  color: brown;
+}
+
+
+
