@@ -1,16 +1,20 @@
 @media all and (max-width: 1000px) {
-    .lesson {
+    .about {
         width: 50%;
         margin-bottom: 50px;
+    }
+    .content {
+      width: 50%;
+      margin-bottom: 20px;
     }
   }
   
   /* Untuk Smartphone */
   @media all and (max-width: 670px) {
-    .header-right {
+    .contents {
       display: none;
     }
-    .menu-icon {
-      display: block;
+    .content_about {
+      display: none;
     }
   }
